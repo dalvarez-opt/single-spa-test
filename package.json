@@ -1,0 +1,12 @@
+{
+    "name": "single-spa-test",
+    "version": "0.0.0",
+    "scripts": {
+        "start": "concurrently \"npm run start-host\" \"npm run start-app\"",
+        "start-host": "npm install --prefix ./apps/single-spa-host && npm run start --prefix ./apps/single-spa-host",
+        "start-app": "npm install --prefix ./apps/single-spa-app1 && npm run serve:single-spa --prefix ./apps/single-spa-app1"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}

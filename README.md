@@ -1,5 +1,5 @@
 ## Deployment
 
 Run scripts for each app 
-- `npm --prefix ./apps/single-spa-host install && npm --prefix ./apps/single-spa-host run start`
-- `npm --prefix ./apps/single-spa-app1 install && npm --prefix ./apps/single-spa-app1 run serve:single-spa`
+- `npm install --prefix ./apps/single-spa-host && npm run start --prefix ./apps/single-spa-host`
+- `npm install --prefix ./apps/single-spa-app1 && npm run serve:single-spa --prefix ./apps/single-spa-app1`
