@@ -2,7 +2,7 @@
     "name": "single-spa-test",
     "version": "0.0.0",
     "scripts": {
-        "start": "npm --prefix ./single-spa-app1 run serve:single-spa && npm --prefix ./single-spa-host run start"
+        "start": "npm --prefix ./apps/single-spa-app1 install && npm --prefix ./apps/single-spa-app1 run serve:single-spa && npm --prefix ./apps/single-spa-host install && npm --prefix ./apps/single-spa-host run start"
     },
     "private": true,
     "dependencies": {}

@@ -1,0 +1,56 @@
+<div class="layout-main">
+  <div class="card">
+    <p-tabView>
+      <p-tabPanel header="Data">
+        <p-panel header="Common Data">
+          <form [formGroup]="formGroup" class="mt-3">
+            <div class="flex flex-column md:flex-row gap-3 row-gap-3">
+              <p-inputGroup>
+                <p-inputGroupAddon>
+                  <i class="pi pi-tag"></i>
+                </p-inputGroupAddon>
+                <p-floatLabel>
+                  <input type="text" pInputText placeholder="Code" formControlName="code" />
+                  <label for="code">Code</label>
+                </p-floatLabel>
+              </p-inputGroup>
+
+              <p-inputGroup>
+                <p-inputGroupAddon>
+                  <i class="pi pi-barcode"></i>
+                </p-inputGroupAddon>
+                <p-floatLabel>
+                  <input type="text" pInputText placeholder="Name" formControlName="name" />
+                  <label for="name">Name</label>
+                </p-floatLabel>
+              </p-inputGroup>
+
+              <p-inputGroup>
+                <p-inputGroupAddon>
+                  <i class="pi pi-list"></i>
+                </p-inputGroupAddon>
+                <p-floatLabel>
+                  <input type="text" pInputText placeholder="Category" formControlName="category" />
+                  <label for="category">Category</label>
+                </p-floatLabel>
+              </p-inputGroup>
+
+              <p-inputGroup>
+                <p-inputGroupAddon>
+                  <i class="pi pi-calculator"></i>
+                </p-inputGroupAddon>
+                <p-floatLabel>
+                  <p-inputNumber inputId="integeronly" placeholder="Quantity" formControlName="quantity" />
+                  <label for="quantity">Quantity</label>
+                </p-floatLabel>
+              </p-inputGroup>
+            </div>
+          </form>
+        </p-panel>
+      </p-tabPanel>
+      <p-tabPanel header="Administration">
+        <p>Administration section</p>
+      </p-tabPanel>
+    </p-tabView>
+  </div>
+</div>
